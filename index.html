@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Творческая Кулинария</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="block_with_nav">
+            <img src="logo.png" class="image">
+            <nav>
+                <a class="nav_el" href="#" onclick="showTab('home')">ГЛАВНАЯ</a>
+                <a class="nav_el" href="#" onclick="showTab('about')">О НАС</a>
+                <a class="nav_el" href="#" onclick="showTab('recipes')">РЕЦЕПТЫ</a>
+                <a class="nav_el" href="#" onclick="showTab('contact')">КОНТАКТЫ</a>
+                <a class="nav_el" href="#" onclick="showTab('blog')">БЛОГ</a>
+                <a class="nav_el" href="#" onclick="showTab('tips')">СОВЕТЫ</a>
+            </nav>
+        </div>
+
+        <div class="header_cheif_block">
+            <h1 class="cheif_h1">Исследуй мир кулинарии!</h1>
+            <button class="Button_atton" onclick="showTab('recipes')">Узнать больше</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="home" class="tab-content">
+            <h2>Вкусные рецепты для любителей готовить</h2>
+            <p>В нашем блоге вы найдете множество рецептов на любой вкус и уровень приготовления. От простых блюд до изысканных угощений — мы делимся лучшими кулинарными секретами!</p>
+            <div class="karitinki_snizu">
+                <img src="pirog.jpeg" alt="Рецепт 1" class="recipe-imageuu" href="#" onclick="showTab('recipes')" >
+                <img src="stek.jpeg" alt="Рецепт 2" class="recipe-imageuu" href="#" onclick="showTab('recipes')" >
+                <img src="pizza.jpeg" alt="Рецепт 3" class="recipe-imageuu" href="#" onclick="showTab('recipes')" >
+                
+            </div>
+        </div>
+
+        <div id="about" class="tab-content" style="display:none;">
+            <h2>О нас</h2>
+            <p>Мы - команда увлеченных кулинаров и блогеров, стремящихся поделиться своими кулинарными открытиями и вдохновением с вами! Наша цель — помочь вам стать уверенными в своих кулинарных навыках и открыть для себя новые горизонты в мире гастрономии.</p>
+        </div>
+
+        <div id="recipes" class="tab-content" style="display:none;">
+            <h2>Рецепты</h2>
+            <p>Здесь вы найдете сборник наших самых любимых рецептов, от простых закусок до сложных блюд!</p>
+
+            <h3>1. Итальянская паста с томатным соусом</h3>
+            <img src="pasta.jpeg" alt="Итальянская паста с томатным соусом" class="recipe-image">
+            <p><strong>Ингредиенты:</strong> паста, помидоры, чеснок, оливковое масло, базилик, соль, перец.</p>
+            <p><strong>Описание:</strong> Это классическое итальянское блюдо легко приготовить, оно наполнено ароматами свежих ингредиентов и идеально подходит для ужина в кругу семьи.</p>
+
+            <h3>2. Курица по-азиатски с овощами</h3>
+            <img src="kuriza.jpeg" alt="Курица по-азиатски с овощами" class="recipe-image">
+            <p><strong>Ингредиенты:</strong> куриное филе, соевый соус, имбирь, чеснок, брокколи, морковь.</p>
+            <p><strong>Описание:</strong> Быстрое и полезное блюдо, которое можно приготовить за 30 минут. Яркие цвета овощей делают его не только вкусным, но и красивым!</p>
+
+            <h3>3. Десерт Тирамису</h3>
+            <img src="tiram.jpeg" alt="Десерт Тирамису" class="recipe-image">
+            <p><strong>Ингредиенты:</strong> маскарпоне, яйца, сахар, кофе, бисквиты.</p>
+            <p><strong>Описание:</strong> Этот итальянский десерт с насыщенным вкусом кофе и кремовой текстурой станет отличным завершением любого обеда.</p>
+        </div>
+
+        
+            <section id="contact" class="tab-content" style="display:none;">
+                <h2>Контакты</h2>
+                <p>Если у вас есть вопросы или предложения, свяжитесь с нами:</p>
+                <ul>
+                    <li>Email: email@gmail.com</li>
+                    <li>Телефон: +123 123 1233</li>
+                    <li>Социальные сети: 
+                        <a href="#">Facebook</a>, 
+                        <a href="#">Instagram</a>, 
+                        <a href="#">Twitter</a>
+                    </li>
+                </ul>
+            </section>
+            
+       
+
+        <div id="blog" class="tab-content" style="display:none;">
+            <h2>Блог</h2>
+            <p>В нашем блоге мы делимся не только рецептами, но и историями из нашей кулинарной жизни. Узнайте о наших путешествиях по миру кулинарии и открытиях новых вкусов!</p>
+
+            <h3>Как выбрать правильные специи для вашего блюда?</h3>
+            <p>Специи могут изменить вкус любого блюда. Мы расскажем о том, как правильно их использовать и какие сочетания наиболее удачны.</p>
+
+            <h3>Путешествие по Италии: Кулинарные традиции</h3>
+            <p>Италия славится своей кухней. В этом посте мы расскажем о самых популярных блюдах и традициях итальянской кухни.</p>
+        </div>
+
+        <div id="tips" class="tab-content" style="display:none;">
+            <h2>Советы по кулинарии</h2>
+            <p>Наши советы помогут вам стать лучшим поваром на кухне!</p>
+
+            <h3>Как правильно нарезать овощи?</h3>
+            <p>Правильная нарезка овощей не только ускоряет процесс приготовления, но и делает блюда более эстетичными. Узнайте о различных техниках нарезки.</p>
+
+            <h3>Как избежать пересолки блюда?</h3>
+            <p>Пересоленные блюда — распространенная проблема. Мы расскажем о том, как правильно добавлять соль и какие есть альтернативы.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_content">
+            <p>&copy; 2024 Творческая Кулинария. Все права защищены.</p>
+            <div class="social_media">
+                <a href="#" class="social_icon">Facebook</a>
+                <a href="#" class="social_icon">Instagram</a>
+                <a href="#" class="social_icon">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Скрыть все вкладки
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.style.display = 'none';
+            });
+
+            // Показать выбранную вкладку
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // Показать вкладку "Главная" по умолчанию
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('home');
+        });
+    </script>
+</body>
+
+</html>

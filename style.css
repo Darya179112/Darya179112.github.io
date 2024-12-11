@@ -1,0 +1,148 @@
+/* style.css */
+
+body {                                 /* Общий стиль*/
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {/* Заголовок*/
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .block_with_nav { /* Блок с навигацией*/
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+  }
+  
+  .image {  /* Логотип*/
+    width: 100px;
+  }
+  /* Навигационное меню */
+  nav {
+    display: flex; 
+    align-items: center;
+  }
+  /* Ссылки в меню */
+  .nav_el {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 15px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+  }
+  /* Ссылки в меню при наведении */
+  .nav_el:hover {
+    border-bottom-color: #ff9800;
+  }
+  /* Блок с заголовком и кнопкой */
+  .header_cheif_block {
+    text-align: center;
+    padding: 30px 0;
+  }
+  /* Заголовок первого уровня */
+  .cheif_h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color: #ff9800;
+    margin-bottom: 20px;
+  }
+  /* Кнопка */
+  .Button_atton {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  /* Кнопка при наведении */
+  .Button_atton:hover {
+    background-color: #e68a00;
+  }
+  /* Основной контент */
+  main {
+    padding: 30px;
+  }
+  /* Вкладки */
+  .tab-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  /* Заголовки второго уровня */
+  h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ff9800;
+  }
+  /* Параграфы */
+  p {
+    line-height: 1.6;
+  }
+  /* Изображения рецептов */
+  .recipe-image {
+    
+        /* Ширина изображения будет 100% от родительского контейнера */
+        height: auto; /* Высота будет автоматически подстраиваться */
+        border-radius: 5px; /* Закругленные углы */
+        margin-top: 10px; /* Отступ сверху */
+    
+    
+  }
+  /* Блок с миниатюрами рецептов */
+  .karitinki_snizu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  /* Миниатюры рецептов */
+  .recipe-imageuu {
+    width: 30%;
+    border-radius: 5px;
+  }
+  /* Миниатюры рецептов при наведении */
+  .recipe-imageuu:hover {
+    opacity: 0.8;
+  }
+  /* Подвал */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  /* Блок с копирайтом и соцсетями */
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    /* Социальные сети */
+  .social_media {
+    display: flex;
+  }
+/* Ссылки на соцсети */
+  .social_icon {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  /* Ссылки на соцсети при наведении */
+  .social_icon:hover {
+    color: #ff9800;
+  }
+  
+
+  
